@@ -32,11 +32,12 @@ void InitStage2(void)
 		//動かない
 		SetDeadBlock(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 0);
 		//→
-
+		SetDeadBlock(D3DXVECTOR3(-120.0f, 0.0f, -120.0f), 1);
+		SetDeadBlock(D3DXVECTOR3(-80.0f, 0.0f, -80.0f), 1);
 		//←
-
+		SetDeadBlock(D3DXVECTOR3(200.0f, 0.0f, -120.0f), 2);
 		//↑
-
+		SetDeadBlock(D3DXVECTOR3(20.0f, 0.0f, -400.0f), 3);
 		//↓
 
 	}
@@ -44,7 +45,7 @@ void InitStage2(void)
 	//ハイスピードデッドブロック
 	{
 		//→
-		
+		SetDeadBlockHS(D3DXVECTOR3(-400.0f, 0.0f, -40.0f), 1);
 		//←
 		
 		//↑
@@ -56,7 +57,8 @@ void InitStage2(void)
 		//←←
 
 		//↑↑
-
+		SetDeadBlockHS(D3DXVECTOR3(-40.0f, 0.0f, -800.0f), 7);
+		SetDeadBlockHS(D3DXVECTOR3(40.0f, 0.0f, -800.0f), 7);
 		//↓↓
 
 	}
