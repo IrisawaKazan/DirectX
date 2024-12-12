@@ -160,7 +160,6 @@ void UpdateStage2(void)
 	}
 	if (pPlayer->pos.z >= 140.0f && GetFade() == FADE_NONE)
 	{//クリア
-		pPlayer->bDisp = false;
 		//モード設定(  画面に移行)
 		SetFade(MODE_CLEAR);
 	}
