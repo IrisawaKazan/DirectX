@@ -67,6 +67,52 @@ void InitLight(void)
 
 	//ライト1を有効にする(ON,OFF)
 	pDevice->LightEnable(1, TRUE);
+
+	//=========
+	//ライト2
+	//=========
+	//ライト2の情報を設定
+	g_light[2].Type = D3DLIGHT_DIRECTIONAL;
+
+	//ライト2の拡散光を設定
+	g_light[2].Diffuse = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
+
+	//ライト2の方向を設定
+	vecDir = D3DXVECTOR3(-1.5f, -1.5f, -1.5f);
+
+	//正規化する(大きさ位置のベクトルにする)
+	D3DXVec3Normalize(&vecDir, &vecDir);
+
+	g_light[2].Direction = vecDir;
+
+	//ライト2の設定をする
+	pDevice->SetLight(2, &g_light[2]);
+
+	//ライト2を有効にする(ON,OFF)
+	pDevice->LightEnable(2, TRUE);
+
+	//=========
+	//ライト3
+	//=========
+	//ライト3の情報を設定
+	g_light[3].Type = D3DLIGHT_DIRECTIONAL;
+
+	//ライト3の拡散光を設定
+	g_light[3].Diffuse = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
+
+	//ライト3の方向を設定
+	vecDir = D3DXVECTOR3(1.5f, -1.5f, 1.5f);
+
+	//正規化する(大きさ位置のベクトルにする)
+	D3DXVec3Normalize(&vecDir, &vecDir);
+
+	g_light[3].Direction = vecDir;
+
+	//ライト3の設定をする
+	pDevice->SetLight(3, &g_light[3]);
+
+	//ライト3を有効にする(ON,OFF)
+	pDevice->LightEnable(3, TRUE);
 }
 
 //==============================================================

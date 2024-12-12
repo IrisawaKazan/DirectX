@@ -10,7 +10,7 @@
 #include"main.h"
 
 //マクロ定義
-#define MAX_LIGHT (3)
+#define MAX_LIGHT (4)
 
 //プロトタイプ宣言
 void InitLight(void);

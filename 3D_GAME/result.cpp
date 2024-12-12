@@ -22,7 +22,7 @@ void InitResult(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\result000.png",//エンターでタイトル,スペースで次のステージへみたいな画像に
+		"data\\TEXTURE\\result000.png",//エンターで次のステージ,スペースでタイトルへみたいな画像に
 		&g_pTextureResult);
 
 	//頂点バッファの生成
@@ -90,12 +90,12 @@ void UninitResult(void)
 //==============================================================
 void UpdateResult(void)
 {
-	if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
+	if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
 	{//決定キー(ENTERキー)が押された
 		//モード設定(タイトル画面に移行)
 		SetFade(MODE_TITLE);
 	}
-	else if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
+	else if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
 	{
 		SetStage(STAGE_2);
 		//次のステージに移行

@@ -507,5 +507,5 @@ void DrawFPS(void)
 	wsprintf(&aStr[0], "FPS:%d\n", g_nCountFPS);
 
 	//テキストの描画
-	g_pFont->DrawText(NULL, &aStr[0], -1, &rect, DT_LEFT, D3DCOLOR_RGBA(255, 255, 255, 255));
+	g_pFont->DrawText(NULL, &aStr[0], -1, &rect, DT_LEFT, D3DCOLOR_RGBA(0, 255, 0, 255));
 }

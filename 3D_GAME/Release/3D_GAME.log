@@ -3,37 +3,29 @@
   bullet.cpp
   camera.cpp
   clear.cpp
-  column.cpp
   deadblock.cpp
   deadblockhighspeed.cpp
-  explosion.cpp
   fade.cpp
   game.cpp
   gameover.cpp
   goal.cpp
   goalblock.cpp
-  input.cpp
   lastblock.cpp
   light.cpp
   main.cpp
-  meshfield.cpp
-  meshwall.cpp
-  コンパイル中...
-  model.cpp
   pause.cpp
   player.cpp
-  polygon.cpp
   result.cpp
   shadow.cpp
-  sound.cpp
   stage1.cpp
+  コンパイル中...
   stage2.cpp
   title.cpp
   tutorial.cpp
   wall.cpp
   コード生成しています。
-  4 of 170 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
+  5 of 170 functions ( 2.9%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    3 functions had inline decision re-evaluated but remain unchanged
+    22 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   3D_GAME.vcxproj -> C:\Users\student\Desktop\3D_GAME\Release\3D_GAME.exe
