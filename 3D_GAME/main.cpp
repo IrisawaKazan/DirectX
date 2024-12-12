@@ -18,6 +18,8 @@
 LPDIRECT3D9 g_pD3D = NULL;            //Direct3Dオブジェクトへのポインタ
 LPDIRECT3DDEVICE9 g_pD3DDevice = NULL;//Direct3Dデバイスへのポインタ
 MODE g_mode = MODE_TITLE;             //現在のモード
+LPD3DXFONT g_pFont = NULL;            //フォントへのポインタ
+int g_nCountFPS = 0;                  //FPSカウンタ
 
 //デバイスの取得
 LPDIRECT3DDEVICE9 GetDevice(void)
@@ -112,6 +114,15 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hinstancePrev, _
 		else
 		{//DirectXの処理
 			dwCurrentTime = timeGetTime();//現在時刻を取得
+
+			if (dwCurrentTime - dwFPSLastTime >= 500)
+			{//0.5秒経過
+				//FPSを計測
+				g_nCountFPS = (dwFrameCount * 1000) / (dwCurrentTime - dwFPSLastTime);
+
+				dwFPSLastTime = dwCurrentTime;//FPSを測定した時刻を保存
+				dwFrameCount = 0;             //フレームカウントをクリア
+			}
 
 			if (dwCurrentTime - dwExecLastTime >= 1000 / 60)
 			{//60分の1秒経過
@@ -231,6 +242,14 @@ HRESULT Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	g_pD3DDevice->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE);
 	g_pD3DDevice->SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_CURRENT);
 
+	//デバッグ表示用フォントの生成
+	D3DXCreateFont(g_pD3DDevice, 18, 0, 0, 0,
+		FALSE, SHIFTJIS_CHARSET,
+		OUT_DEFAULT_PRECIS,
+		DEFAULT_QUALITY,
+		DEFAULT_PITCH,
+		"Terminal", &g_pFont);
+
 	//==============================================================
 	//各種オブジェクトの初期化処理
 	//==============================================================
@@ -282,6 +301,13 @@ void Uninit(void)
 	//各種オブジェクトの終了処理
 	//==============================================================
 	UninitKeyboard();
+
+	//デバッグ表示用フォントの破棄
+	if (g_pFont != NULL)
+	{
+		g_pFont->Release();
+		g_pFont = NULL;
+	}
 
 	//Direct3Dデバイスの破棄
 	if (g_pD3DDevice != NULL)
@@ -382,6 +408,13 @@ void Draw(void)
 
 		DrawFade();
 
+#ifdef _DEBUG
+
+		//FPSの表示
+		DrawFPS();
+
+#endif
+
 		//描画終了
 		g_pD3DDevice->EndScene();
 	}
@@ -460,4 +493,19 @@ void SetMode(MODE mode)
 MODE GetMode(void)
 {
 	return g_mode;
+}
+
+//==============================================================
+//FPSの表示
+//==============================================================
+void DrawFPS(void)
+{
+	RECT rect = { 0,0,SCREEN_WIDTH,SCREEN_HEIGHT };
+	char aStr[256];
+
+	//文字列に代入
+	wsprintf(&aStr[0], "FPS:%d\n", g_nCountFPS);
+
+	//テキストの描画
+	g_pFont->DrawText(NULL, &aStr[0], -1, &rect, DT_LEFT, D3DCOLOR_RGBA(255, 255, 255, 255));
 }

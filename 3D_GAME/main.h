@@ -70,5 +70,6 @@ void Draw(void);
 LPDIRECT3DDEVICE9 GetDevice(void);
 void SetMode(MODE mode);
 MODE GetMode(void);
+void DrawFPS(void);
 
 #endif
