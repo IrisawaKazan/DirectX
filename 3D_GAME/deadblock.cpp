@@ -147,10 +147,16 @@ void UninitDeadBlock(void)
 //==============================================================
 void UpdateDeadBlock(void)
 {
+	Player* pPlayer = GetPlayer();
+
 	for (int nCntDeadBlock = 0; nCntDeadBlock < MAX_DEADBLOCK; nCntDeadBlock++)
 	{
 		if (g_deadblock[nCntDeadBlock].bUse == true)
 		{
+			if (g_deadblock[nCntDeadBlock].nType == 0)
+			{
+
+			}
 			if (g_deadblock[nCntDeadBlock].nType == 1)
 			{
 				//‰E‚É“®‚­

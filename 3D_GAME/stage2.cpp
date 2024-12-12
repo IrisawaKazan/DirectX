@@ -29,6 +29,8 @@ void InitStage2(void)
 
 	//デッドブロック
 	{
+		//動かない
+		SetDeadBlock(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 0);
 		//→
 
 		//←
