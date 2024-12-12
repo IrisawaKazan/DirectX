@@ -9,6 +9,7 @@
 
 #include"main.h"
 #include"bullet.h"
+#include"player.h"
 
 //É}ÉNÉçíËã`
 #define MAX_SHADOW (1 + MAX_BULLET)
