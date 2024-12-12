@@ -56,6 +56,12 @@ void InitStage1(void)
 
 		//↓
 
+		//→→
+		SetDeadBlockHS(D3DXVECTOR3(-1750.0f, 0.0f, 0.0f), 5);
+		//←←
+		SetDeadBlockHS(D3DXVECTOR3(2000.0f, 0.0f, -100.0f), 6);
+		//↑↑
+		SetDeadBlockHS(D3DXVECTOR3(-100.0f, 0.0f, -700.0f), 7);
 	}
 
 	//ゴールブロック↑

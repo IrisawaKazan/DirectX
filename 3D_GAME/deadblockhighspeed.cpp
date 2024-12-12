@@ -175,6 +175,24 @@ void UpdateDeadBlockHS(void)
 				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
 				g_deadblockhs[nCntDeadBlockHS].pos.z -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
 			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 5)
+			{
+				//âEÇ…ìÆÇ≠
+				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 6)
+			{
+				//ç∂Ç…ìÆÇ≠
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 7)
+			{
+				//âúÇ…ìÆÇ≠
+				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.z += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+			}
 		}
 	}
 }
