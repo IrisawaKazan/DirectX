@@ -24,7 +24,7 @@ void InitPause(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\pause001.png",
+		"data\\TEXTURE\\pause101.png",//1.このステージの最初から 2.タイトルへ戻る
 		&g_pTexturePause);
 
 	//頂点バッファの生成
@@ -134,12 +134,9 @@ void DrawPause(void)
 
 	for (nCntPause = 0; nCntPause < 8; nCntPause++)
 	{
-		//if (g_nPause == true)
-		{
-			//ポリゴンの描画
-			pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP,
-				4 * nCntPause,
-				2);
-		}
+		//ポリゴンの描画
+		pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP,
+			4 * nCntPause,
+			2);
 	}
 }
