@@ -37,30 +37,52 @@ void InitStage2(void)
 		//←
 		SetDeadBlock(D3DXVECTOR3(200.0f, 0.0f, -120.0f), 2);
 		//↑
-		SetDeadBlock(D3DXVECTOR3(20.0f, 0.0f, -400.0f), 3);
+		SetDeadBlock(D3DXVECTOR3(-80.0f, 0.0f, -400.0f), 3);
+		SetDeadBlock(D3DXVECTOR3(40.0f, 0.0f, -650.0f), 3);
+		SetDeadBlock(D3DXVECTOR3(80.0f, 0.0f, -690.0f), 3);
+		SetDeadBlock(D3DXVECTOR3(120.0f, 0.0f, -730.0f), 3);
 		//↓
-
+		SetDeadBlock(D3DXVECTOR3(-120.0f, 0.0f, 250.0f), 4);
+		SetDeadBlock(D3DXVECTOR3(120.0f, 0.0f, 250.0f), 4);
+		SetDeadBlock(D3DXVECTOR3(-120.0f, 0.0f, 550.0f), 4);
+		SetDeadBlock(D3DXVECTOR3(-80.0f, 0.0f, 590.0f), 4);
 	}
 
 	//ハイスピードデッドブロック
 	{
 		//→
 		SetDeadBlockHS(D3DXVECTOR3(-400.0f, 0.0f, -40.0f), 1);
+		SetDeadBlockHS(D3DXVECTOR3(-600.0f, 0.0f, -40.0f), 1);
+		SetDeadBlockHS(D3DXVECTOR3(-800.0f, 0.0f, 120.0f), 1);
 		//←
-		
+		SetDeadBlockHS(D3DXVECTOR3(900.0f, 0.0f, 80.0f), 2);
 		//↑
-
+		SetDeadBlockHS(D3DXVECTOR3(-40.0f, 0.0f, -800.0f), 3);
 		//↓
 
 		//→→
-
+		SetDeadBlockHS(D3DXVECTOR3(-1200.0f, 0.0f, 0.0f), 5);
+		SetDeadBlockHS(D3DXVECTOR3(-2000.0f, 0.0f, 40.0f), 5);
+		SetDeadBlockHS(D3DXVECTOR3(-2000.0f, 0.0f, 80.0f), 5);
+		SetDeadBlockHS(D3DXVECTOR3(-2000.0f, 0.0f, 120.0f), 5);
 		//←←
-
+		SetDeadBlockHS(D3DXVECTOR3(1500.0f, 0.0f, 0.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(2600.0f, 0.0f, 40.0f), 6);
 		//↑↑
+		SetDeadBlockHS(D3DXVECTOR3(-80.0f, 0.0f, -800.0f), 7);
 		SetDeadBlockHS(D3DXVECTOR3(-40.0f, 0.0f, -800.0f), 7);
 		SetDeadBlockHS(D3DXVECTOR3(40.0f, 0.0f, -800.0f), 7);
+		SetDeadBlockHS(D3DXVECTOR3(80.0f, 0.0f, -800.0f), 7);
 		//↓↓
 
+		//→↑
+		//SetDeadBlockHS(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 10);
+		//→↓
+		//SetDeadBlockHS(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 11);
+		//←↑
+		//SetDeadBlockHS(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 12);
+		//←↓
+		//SetDeadBlockHS(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 13);
 	}
 
 	//ゴールブロック↑

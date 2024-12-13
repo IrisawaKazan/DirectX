@@ -49,7 +49,7 @@ void UninitGame(void)
 //==============================================================
 void UpdateGame(void)
 {
-	if (GetKeyboardTrigger(DIK_TAB) == true)
+	if (GetKeyboardTrigger(DIK_TAB) || GetKeyboardTrigger(DIK_LSHIFT) == true)
 	{//ポーズキーが押された
 		g_bPause = g_bPause ? false : true;
 	}

@@ -177,21 +177,59 @@ void UpdateDeadBlockHS(void)
 			}
 			if (g_deadblockhs[nCntDeadBlockHS].nType == 5)
 			{
-				//右に動く
+				//右に速く動く
 				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
 				g_deadblockhs[nCntDeadBlockHS].pos.x += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
 			}
 			if (g_deadblockhs[nCntDeadBlockHS].nType == 6)
 			{
-				//左に動く
+				//左に速く動く
 				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
 				g_deadblockhs[nCntDeadBlockHS].pos.x -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
 			}
 			if (g_deadblockhs[nCntDeadBlockHS].nType == 7)
 			{
-				//奥に動く
+				//奥に速く動く
 				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
 				g_deadblockhs[nCntDeadBlockHS].pos.z += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 8)
+			{
+				//手前に速く動く
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.z -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK * 2.0f / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 10)
+			{
+				//右奥に動く
+				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.z += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 11)
+			{
+				//右手前に動く
+				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.z -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 12)
+			{
+				//左奥に動く
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x += sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.z += cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+			}
+			if (g_deadblockhs[nCntDeadBlockHS].nType == 13)
+			{
+				//左手前に動く
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.x -= sinf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
+				g_deadblockhs[nCntDeadBlockHS].pos.z -= cosf(g_deadblockhs[nCntDeadBlockHS].rot.y) * MAX_MDHSBLOCK / sqrtf(2.0f);
 			}
 		}
 	}

@@ -1,8 +1,9 @@
-﻿  stage1.cpp
+﻿  deadblockhighspeed.cpp
+  game.cpp
   stage2.cpp
   コード生成しています。
   4 of 170 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    2 functions had inline decision re-evaluated but remain unchanged
+    36 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   3D_GAME.vcxproj -> C:\Users\student\Desktop\3D_GAME\Release\3D_GAME.exe
