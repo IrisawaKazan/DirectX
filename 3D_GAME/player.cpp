@@ -1,6 +1,6 @@
 //==============================================================
 //
-//[player.cpp]
+//3D_GAME[player.cpp]
 //Author:Irisawa Kazan
 //
 //==============================================================
@@ -149,20 +149,6 @@ void InitPlayer(void)
 //==============================================================
 void UninitPlayer(void)
 {
-	////メッシュの破棄
-	//if (g_player.pMesh != NULL)
-	//{
-	//	g_player.pMesh->Release();
-	//	g_player.pMesh = NULL;
-	//}
-
-	////マテリアルの破棄
-	//if (g_player.pBuffMat != NULL)
-	//{
-	//	g_player.pBuffMat->Release();
-	//	g_player.pBuffMat = NULL;
-	//}
-
 	for (int nCntModel = 0; nCntModel < MAX_PARTS; nCntModel++)
 	{
 		//メッシュの破棄
