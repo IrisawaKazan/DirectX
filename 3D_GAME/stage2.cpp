@@ -75,10 +75,24 @@ void InitStage2(void)
 		SetDeadBlockHS(D3DXVECTOR3(2600.0f, 0.0f, 40.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(1800.0f, 0.0f, 40.0f), 6);
 		
-		SetDeadBlockHS(D3DXVECTOR3(5600.0f, 0.0f, 120.0f), 6);
-		SetDeadBlockHS(D3DXVECTOR3(5640.0f, 0.0f, 120.0f), 6);
-		SetDeadBlockHS(D3DXVECTOR3(5680.0f, 0.0f, 120.0f), 6);
-
+		SetDeadBlockHS(D3DXVECTOR3(5920.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(5960.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6000.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6040.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6080.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6120.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6160.0f, 0.0f, 120.0f), 6);
+		//SetDeadBlockHS(D3DXVECTOR3(6200.0f, 0.0f, 120.0f), 6);
+		//SetDeadBlockHS(D3DXVECTOR3(6240.0f, 0.0f, 120.0f), 6);
+		//SetDeadBlockHS(D3DXVECTOR3(6280.0f, 0.0f, 120.0f), 6);
+		//SetDeadBlockHS(D3DXVECTOR3(6320.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6360.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6400.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6440.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6480.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6520.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6560.0f, 0.0f, 120.0f), 6);
+		SetDeadBlockHS(D3DXVECTOR3(6600.0f, 0.0f, 120.0f), 6);
 		//Å™Å™
 		SetDeadBlockHS(D3DXVECTOR3(-80.0f, 0.0f, -800.0f), 7);
 		SetDeadBlockHS(D3DXVECTOR3(-40.0f, 0.0f, -800.0f), 7);
