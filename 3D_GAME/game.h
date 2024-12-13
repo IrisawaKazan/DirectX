@@ -30,7 +30,7 @@
 //マクロ定義
 #define MAX_GBLOCKPOS (120.0f)
 #define MAX_LBLOCKPOSS1 (750.0f)
-#define MAX_LBLOCKPOSS2 (MAX_LBLOCKPOSS1 * 1.65f)
+#define MAX_LBLOCKPOSS2 (MAX_LBLOCKPOSS1 * 1.675f)
 
 //ステージの種類
 typedef enum

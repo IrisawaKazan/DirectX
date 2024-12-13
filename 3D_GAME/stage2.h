@@ -15,6 +15,10 @@
 #include"fade.h"
 #include"stage1.h"
 
+#define MAX_PPP (1800.0f)
+#define MAX_PPP1 (2600.0f)
+#define MAX_PPP2 (2300.0f)
+
 //プロトタイプ宣言
 void InitStage2(void);
 void UninitStage2(void);

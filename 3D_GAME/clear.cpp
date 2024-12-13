@@ -22,7 +22,7 @@ void InitClear(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\clear050.png",//やったぜ!!的な
+		"data\\TEXTURE\\clear000.png",//やったぜ!!的な
 		&g_pTextureClear);
 
 	//頂点バッファの生成

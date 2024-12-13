@@ -57,7 +57,7 @@ void InitStage2(void)
 		//Å©
 		SetDeadBlockHS(D3DXVECTOR3(900.0f, 0.0f, 80.0f), 2);
 		//Å™
-				
+
 		//Å´
 
 		//Å®Å®
@@ -74,7 +74,7 @@ void InitStage2(void)
 		SetDeadBlockHS(D3DXVECTOR3(1500.0f, 0.0f, 0.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(2600.0f, 0.0f, 40.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(1800.0f, 0.0f, 40.0f), 6);
-		
+
 		SetDeadBlockHS(D3DXVECTOR3(5920.0f, 0.0f, 120.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(5960.0f, 0.0f, 120.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(6000.0f, 0.0f, 120.0f), 6);
@@ -107,7 +107,6 @@ void InitStage2(void)
 		SetDeadBlockHS(D3DXVECTOR3(80.0f, 0.0f, 4000.0f), 8);
 		SetDeadBlockHS(D3DXVECTOR3(120.0f, 0.0f, 4000.0f), 8);
 		//Å®Å™
-#define MAX_PPP (1800.0f)
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP, 0.0f, -MAX_PPP - 280.0f), 10);
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP, 0.0f, -MAX_PPP - 240.0f), 10);
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP, 0.0f, -MAX_PPP - 200.0f), 10);
@@ -123,7 +122,7 @@ void InitStage2(void)
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP, 0.0f, -MAX_PPP + 200.0f), 10);
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP, 0.0f, -MAX_PPP + 240.0f), 10);
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP, 0.0f, -MAX_PPP + 280.0f), 10);
-#define MAX_PPP1 (2600.0f)
+
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP1, 0.0f, -MAX_PPP1 - 280.0f), 10);
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP1, 0.0f, -MAX_PPP1 - 240.0f), 10);
 		SetDeadBlockHS(D3DXVECTOR3(-MAX_PPP1, 0.0f, -MAX_PPP1 - 200.0f), 10);
@@ -142,7 +141,6 @@ void InitStage2(void)
 		//Å®Å´
 
 		//Å©Å™
-#define MAX_PPP2 (2300.0f)
 		SetDeadBlockHS(D3DXVECTOR3(MAX_PPP2, 0.0f, -MAX_PPP2 - 280.0f), 12);
 		SetDeadBlockHS(D3DXVECTOR3(MAX_PPP2, 0.0f, -MAX_PPP2 - 240.0f), 12);
 		SetDeadBlockHS(D3DXVECTOR3(MAX_PPP2, 0.0f, -MAX_PPP2 - 200.0f), 12);
