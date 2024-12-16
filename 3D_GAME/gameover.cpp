@@ -96,7 +96,7 @@ void UninitGameover(void)
 void UpdateGameover(void)
 {
 	g_nCounterAnimGameover++;//カウンターを計算
-	VERTEX_2D* pVtx{};     //頂点情報へのポインタ
+	VERTEX_2D* pVtx{};       //頂点情報へのポインタ
 
 	//アニメーション
 	if (g_nCounterAnimGameover % 7 == 0)
@@ -118,7 +118,7 @@ void UpdateGameover(void)
 
 	if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
 	{//決定キー(ENTERキー)が押された
-		//モード設定(タイトル画面に移行)
+		//モード設定
 		SetFade(MODE_GAME);
 	}
 }

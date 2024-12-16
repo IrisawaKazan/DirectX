@@ -91,7 +91,7 @@ void UninitResult(void)
 void UpdateResult(void)
 {
 	if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
-	{//決定キー(ENTERキー)が押された
+	{
 		//モード設定(タイトル画面に移行)
 		SetFade(MODE_TITLE);
 	}

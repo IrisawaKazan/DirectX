@@ -22,8 +22,10 @@ void InitClear(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\clear000.png",//やったぜ!!的な
+		"data\\TEXTURE\\clear000.png",//Yattaze!!的な
 		&g_pTextureClear);
+
+	//clear050.png
 
 	//頂点バッファの生成
 	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4,

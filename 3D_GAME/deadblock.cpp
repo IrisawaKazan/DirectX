@@ -155,7 +155,7 @@ void UpdateDeadBlock(void)
 		{
 			if (g_deadblock[nCntDeadBlock].nType == 0)
 			{
-
+				//“®‚©‚È‚¢
 			}
 			if (g_deadblock[nCntDeadBlock].nType == 1)
 			{

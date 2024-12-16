@@ -25,6 +25,8 @@ void InitTutorial(void)
 		"data\\TEXTURE\\tutorial000.png",//簡易的なものをどんどん改良
 		&g_pTextureTutorial);
 
+	//tutorial050.png
+
 	//頂点バッファの生成
 	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4,
 		D3DUSAGE_WRITEONLY,

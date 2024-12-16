@@ -86,7 +86,7 @@ void InitStage2(void)
 		//SetDeadBlockHS(D3DXVECTOR3(6240.0f, 0.0f, 120.0f), 6);
 		//SetDeadBlockHS(D3DXVECTOR3(6280.0f, 0.0f, 120.0f), 6);
 		//SetDeadBlockHS(D3DXVECTOR3(6320.0f, 0.0f, 120.0f), 6);
-		SetDeadBlockHS(D3DXVECTOR3(6360.0f, 0.0f, 120.0f), 6);
+		//SetDeadBlockHS(D3DXVECTOR3(6360.0f, 0.0f, 120.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(6400.0f, 0.0f, 120.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(6440.0f, 0.0f, 120.0f), 6);
 		SetDeadBlockHS(D3DXVECTOR3(6480.0f, 0.0f, 120.0f), 6);
