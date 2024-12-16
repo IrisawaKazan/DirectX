@@ -1,0 +1,3 @@
+C:\Users\student\source\repos\ACTION_GAME\Debug\ACTION_GAME.exe
+G:\マイドライブ\ACTION_GAME\Debug\ACTION_GAME.exe
+C:\Users\student\Desktop\ACTION_GAME\Debug\ACTION_GAME.exe

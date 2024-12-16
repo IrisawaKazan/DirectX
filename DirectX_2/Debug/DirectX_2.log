@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: 中間ディレクトリ (Debug\) に別のプロジェクト (DirectX_2.vcxproj) と共有されているファイルが含まれています。これにより、クリーンしてリビルド動作が適切に行われない可能性があります。
+  bullet.cpp
+  effect.cpp
+  enemy.cpp
+  game.cpp
+  main.cpp
+  player.cpp
+  コードを生成中...
+  DirectX_2.vcxproj -> C:\Users\student\Desktop\DirectX_2\Debug\SHOOTING_GAME.exe

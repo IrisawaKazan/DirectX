@@ -1,0 +1,35 @@
+﻿  background.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  boss.cpp
+  bullet.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  effect.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  enemy.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  explosion.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  fade.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  game.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  input.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  item.cpp
+  main.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  particle.cpp
+  pause.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  player.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  ranking.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  result.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  score.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  sound.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
+  title.cpp
+C:\Users\student\source\repos\DirectX_2\main.h(11,9): fatal error C1083: include ファイルを開けません。'd3dx9.h':No such file or directory
