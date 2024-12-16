@@ -105,7 +105,28 @@ void UpdatePause(void)
 		SetFade(MODE_TITLE);
 	}
 	//裏コマンド
+	/*else if (GetKeyboardTrigger(DIK_5) == true)
+	{//チュートリアル画面に行く
+		SetFade(MODE_TUTORIAL);
+	}
+	else if (GetKeyboardTrigger(DIK_6) == true)
+	{//ゲームオーバー画面に行く
+		SetFade(MODE_GAMEOVER);
+	}
+	else if (GetKeyboardTrigger(DIK_7) == true)
+	{//リザルト画面に行く
+		SetFade(MODE_RESULT);
+	}
+	else if (GetKeyboardTrigger(DIK_8) == true)
+	{//クリア画面に行く
+		SetFade(MODE_CLEAR);
+	}
 	else if (GetKeyboardTrigger(DIK_9) == true)
+	{//ステージ1に行く
+		SetStage(STAGE_1);
+		SetFade(MODE_GAME);
+	}*/
+	else if (GetKeyboardTrigger(DIK_0) == true)
 	{//ステージ2に行く
 		SetStage(STAGE_2);
 		SetFade(MODE_GAME);
