@@ -25,7 +25,7 @@ void InitMeshfield(void)
 
 	//テクスチャの読み込み
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\block001.png",
+		"data\\TEXTURE\\field100.png",
 		&g_meshfield.pTexture);
 
 	//頂点バッファの生成
