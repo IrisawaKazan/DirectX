@@ -15,7 +15,7 @@
 #define MAX_MWPVTX ((MAX_MWX + 1) * (MAX_MWZ + 1))                            //頂点数
 #define MAX_MWPOLYGON (MAX_MWX * MAX_MWZ * 2 + (MAX_MWZ - 1) * 2 * MAX_MWZ)   //ポリゴン数
 #define MAX_MWPIDX ((MAX_MWX + 1) * 2 * MAX_MWZ + (MAX_MWZ - 1) * 2 * MAX_MWZ)//インデックス数
-#define NUM_PLUS (/*80*/0.0f)
+#define NUM_PLUS (0.0f)
 #define MAX_MWPOSX (150.0f + NUM_PLUS)                                        //壁のx
 #define MAX_MWPOSZ (MAX_MWPOSX - NUM_PLUS)                                    //壁のz
 #define MAX_MWHEIGHT (700.0f)                                                 //壁の高さ

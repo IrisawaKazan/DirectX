@@ -174,16 +174,20 @@ void UpdatePlayer(void)
 {
 	Camera* pCamera = GetCamera();
 
-	CollisionBlockX();
-	CollisionBlockZ();
-	CollisionDeadBlockX();
-	CollisionDeadBlockHSX();
-	CollisionGoalBlockX();
-	CollisionLastBlockX();
+	//ブロックとの当たり判定
+	{
+		CollisionBlockX();
+		CollisionBlockZ();
+		CollisionDeadBlockX();
+		CollisionDeadBlockHSX();
+		CollisionGoalBlockX();
+		CollisionLastBlockX();
+	}
 
 	//前回の位置を保存
 	g_player.posOld = g_player.pos;
 
+	//プレイヤー移動
 	if (g_player.bDisp == true)
 	{
 		if (GetKeyboardPress(DIK_A) == true)
