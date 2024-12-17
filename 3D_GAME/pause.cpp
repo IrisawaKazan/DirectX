@@ -105,7 +105,7 @@ void UpdatePause(void)
 		SetFade(MODE_TITLE);
 	}
 	//裏コマンド
-	/**/else if (GetKeyboardTrigger(DIK_5) == true)
+	/*else if (GetKeyboardTrigger(DIK_5) == true)
 	{//チュートリアル画面に行く
 		SetFade(MODE_TUTORIAL);
 	}
@@ -125,7 +125,7 @@ void UpdatePause(void)
 	{//ステージ1に行く
 		SetStage(STAGE_1);
 		SetFade(MODE_GAME);
-	}/**/
+	}*/
 	else if (GetKeyboardTrigger(DIK_0) == true)
 	{//ステージ2に行く
 		SetStage(STAGE_2);

@@ -23,6 +23,7 @@ void InitStage2(void)
 	InitLastBlock();
 	InitMeshwall();
 	InitGoal();
+	InitSphere();
 
 	//ゴール
 	SetGoal(D3DXVECTOR3(0.0f, GOAL_HEIGHT, 150.0f), D3DXVECTOR3(-D3DX_PI / 2.0f, 0.0f, 0.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
@@ -228,6 +229,7 @@ void UninitStage2(void)
 	UninitLastBlock();
 	UninitMeshwall();
 	UninitGoal();
+	UninitSphere();
 }
 
 //==============================================================
@@ -249,6 +251,7 @@ void UpdateStage2(void)
 	UpdateLastBlock();
 	UpdateMeshwall();
 	UpdateGoal();
+	UpdateSphere();
 
 	if (pPlayer->pos.z <= -150.0f && GetFade() == FADE_NONE)
 	{//ゲームオーバー
@@ -268,7 +271,7 @@ void UpdateStage2(void)
 		//モード設定(ゲームオーバー画面に移行)
 		SetFade(MODE_GAMEOVER);
 	}
-	if (pPlayer->pos.z >= 140.0f && GetFade() == FADE_NONE)
+	if (pPlayer->pos.z >= 145.0f && GetFade() == FADE_NONE)
 	{//クリア
 		//モード設定(  画面に移行)
 		SetFade(MODE_CLEAR);
@@ -292,4 +295,5 @@ void DrawStage2(void)
 	DrawWall();
 	DrawMeshwall();
 	DrawShadow();
+	DrawSphere();
 }

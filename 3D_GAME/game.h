@@ -26,6 +26,8 @@
 #include"goal.h"
 #include"stage1.h"
 #include"stage2.h"
+#include"sphere.h"
+#include"model.h"
 
 //ƒ}ƒNƒ’è‹`
 #define MAX_GBLOCKPOS (120.0f)
