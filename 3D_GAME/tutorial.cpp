@@ -22,7 +22,7 @@ void InitTutorial(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\tutorial051.png",//簡易的なものをどんどん改良
+		"data\\TEXTURE\\tutorial051.png",//簡易的なものをどんどん改良 エンターで進む, スペースでtitleに戻る
 		&g_pTextureTutorial);
 
 	//頂点バッファの生成
@@ -94,6 +94,11 @@ void UpdateTutorial(void)
 	{//決定キー(ENTERキー)が押された
 		//モード設定(ゲーム画面に移行)
 		SetFade(MODE_GAME);
+	}
+	else if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
+	{//決定キー(SPACEキー)が押された
+		//モード設定(タイトル画面に移行)
+		SetFade(MODE_TITLE);
 	}
 }
 
