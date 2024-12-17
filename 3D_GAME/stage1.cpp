@@ -191,7 +191,7 @@ void UpdateStage1(void)
 		//モード設定(ゲームオーバー画面に移行)
 		SetFade(MODE_GAMEOVER);
 	}
-	if (pPlayer->pos.z >= 142.5f && GetFade() == FADE_NONE)
+	if (pPlayer->pos.z >= 142.0f && GetFade() == FADE_NONE)
 	{//クリア
 		//モード設定(  画面に移行)
 		SetFade(MODE_RESULT);
