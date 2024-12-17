@@ -11,6 +11,7 @@
 #include"input.h"
 #include"fade.h"
 #include"game.h"
+#include"title.h"
 
 //プロトタイプ宣言
 void InitClear(void);

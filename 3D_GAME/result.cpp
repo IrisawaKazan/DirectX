@@ -92,12 +92,14 @@ void UpdateResult(void)
 {
 	if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
 	{
+		SetTitle(TITLE_2);
 		//モード設定(タイトル画面に移行)
 		SetFade(MODE_TITLE);
 	}
 	else if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
 	{
 		SetStage(STAGE_2);
+		SetTitle(TITLE_2);
 		//次のステージに移行
 		SetFade(MODE_GAME);
 	}

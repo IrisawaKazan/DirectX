@@ -173,6 +173,8 @@
     <ClCompile Include="stage1.cpp" />
     <ClCompile Include="stage2.cpp" />
     <ClCompile Include="title.cpp" />
+    <ClCompile Include="titlefirst.cpp" />
+    <ClCompile Include="titlesecond.cpp" />
     <ClCompile Include="tutorial.cpp" />
     <ClCompile Include="wall.cpp" />
   </ItemGroup>
@@ -207,6 +209,8 @@
     <ClInclude Include="stage1.h" />
     <ClInclude Include="stage2.h" />
     <ClInclude Include="title.h" />
+    <ClInclude Include="titlefirst.h" />
+    <ClInclude Include="titlesecond.h" />
     <ClInclude Include="tutorial.h" />
     <ClInclude Include="wall.h" />
   </ItemGroup>
