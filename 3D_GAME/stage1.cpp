@@ -55,8 +55,8 @@ void InitStage1(void)
 	//ハイスピードデッドブロック
 	{
 		//→
-		SetDeadBlockHS(D3DXVECTOR3(-500.0f, 0.0f, -120.0f), 1);
 		SetDeadBlockHS(D3DXVECTOR3(-700.0f, 0.0f, 120.0f), 1);
+		SetDeadBlockHS(D3DXVECTOR3(-500.0f, 0.0f, -120.0f), 1);
 		//←
 		SetDeadBlockHS(D3DXVECTOR3(600.0f, 0.0f, -60.0f), 2);
 		SetDeadBlockHS(D3DXVECTOR3(650.0f, 0.0f, 60.0f), 2);
