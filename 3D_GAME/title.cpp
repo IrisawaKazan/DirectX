@@ -23,6 +23,10 @@ void InitTitle(void)
 	case TITLE_2:
 		InitTitlesecond();
 		break;
+
+	case TITLE_3:
+		InitTitlethird();
+		break;
 	}
 }
 
@@ -53,6 +57,10 @@ void UpdateTitle(void)
 	case TITLE_2:
 		UpdateTitlesecond();
 		break;
+
+	case TITLE_3:
+		UpdateTitlethird();
+		break;
 	}
 }
 
@@ -69,6 +77,10 @@ void DrawTitle(void)
 
 	case TITLE_2:
 		DrawTitlesecond();
+		break;
+
+	case TITLE_3:
+		DrawTitlethird();
 		break;
 	}
 }

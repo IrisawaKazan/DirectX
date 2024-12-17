@@ -12,12 +12,14 @@
 #include"fade.h"
 #include"titlefirst.h"
 #include"titlesecond.h"
+#include"titlethird.h"
 
 //ƒ^ƒCƒgƒ‹‚ÌŽí—Þ
 typedef enum
 {
 	TITLE_1 = 0,
 	TITLE_2,
+	TITLE_3,
 	TITLE_MAX
 }TITLE;
 

@@ -95,6 +95,7 @@ void UpdateClear(void)
 	if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
 	{//決定キー(ENTERキー)が押された
 		SetStage(STAGE_1);
+		SetTitle(TITLE_3);
 		//モード設定(タイトル画面に移行)
 		SetFade(MODE_TITLE);
 	}

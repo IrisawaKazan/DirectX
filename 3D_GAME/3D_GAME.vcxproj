@@ -175,6 +175,7 @@
     <ClCompile Include="title.cpp" />
     <ClCompile Include="titlefirst.cpp" />
     <ClCompile Include="titlesecond.cpp" />
+    <ClCompile Include="titlethird.cpp" />
     <ClCompile Include="tutorial.cpp" />
     <ClCompile Include="wall.cpp" />
   </ItemGroup>
@@ -211,6 +212,7 @@
     <ClInclude Include="title.h" />
     <ClInclude Include="titlefirst.h" />
     <ClInclude Include="titlesecond.h" />
+    <ClInclude Include="titlethird.h" />
     <ClInclude Include="tutorial.h" />
     <ClInclude Include="wall.h" />
   </ItemGroup>
