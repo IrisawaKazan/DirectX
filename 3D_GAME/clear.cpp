@@ -25,8 +25,6 @@ void InitClear(void)
 		"data\\TEXTURE\\clear051.png",//Yattaze!!的な
 		&g_pTextureClear);
 
-	//clear050.png
-
 	//頂点バッファの生成
 	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4,
 		D3DUSAGE_WRITEONLY,
