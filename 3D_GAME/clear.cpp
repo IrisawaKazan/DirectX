@@ -22,7 +22,7 @@ void InitClear(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\clear000.png",//Yattaze!!的な
+		"data\\TEXTURE\\clear051.png",//Yattaze!!的な
 		&g_pTextureClear);
 
 	//clear050.png
