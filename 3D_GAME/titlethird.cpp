@@ -22,7 +22,7 @@ void InitTitlethird(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\titlethird050.png",//豪華に
+		"data\\TEXTURE\\titlethird101.png",//豪華に
 		&g_pTextureTitlethird);
 
 	//頂点バッファの生成

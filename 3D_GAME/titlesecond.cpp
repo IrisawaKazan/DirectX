@@ -22,7 +22,7 @@ void InitTitlesecond(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\titlesecond050.png",//2でSTAGE2へ
+		"data\\TEXTURE\\titlesecond100.png",//2でSTAGE2へ
 		&g_pTextureTitlesecond);
 
 	//頂点バッファの生成

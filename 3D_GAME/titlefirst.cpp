@@ -22,7 +22,7 @@ void InitTitlefirst(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\title050.png",//タイトルとサブタイトルも できるだけ白と黒だけで
+		"data\\TEXTURE\\title100.png",//タイトルとサブタイトルも できるだけ白と黒だけで
 		&g_pTextureTitlefirst);
 
 	//頂点バッファの生成
