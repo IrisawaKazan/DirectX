@@ -22,7 +22,7 @@ void InitTutorial(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\tutorial051.png",//簡易的なものをどんどん改良 エンターで進む, スペースでtitleに戻る
+		"data\\TEXTURE\\tutorial100.png",//簡易的なものをどんどん改良 エンターで進む, スペースでtitleに戻る
 		&g_pTextureTutorial);
 
 	//頂点バッファの生成
