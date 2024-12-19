@@ -25,7 +25,7 @@ void InitBillboard(void)
 
 	//テクスチャの読み込み
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\wood.png",
+		"data\\TEXTURE\\kumo000.png",
 		&g_pTextureBillboard);
 
 	//ビルボードの情報の初期化
@@ -33,10 +33,6 @@ void InitBillboard(void)
 	{
 		g_aBillboard[nCntBillboard].pos = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 		g_aBillboard[nCntBillboard].rot = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		//g_aBillboard[nCntBillboard].move = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		//g_aBillboard[nCntBillboard].dir = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-		//g_aBillboard[nCntBillboard].nLife = 100;
-		//g_aBillboard[nCntBillboard].nType = {};
 		g_aBillboard[nCntBillboard].mtxWorld = {};
 		g_aBillboard[nCntBillboard].bUse = false;//使用していない状態にする
 	}
@@ -109,36 +105,7 @@ void UninitBillboard(void)
 //==============================================================
 void UpdateBillboard(void)
 {
-	//int nCntBillboard;
-	//VERTEX_3D* pVtx;
 
-	////頂点バッファをロックし,頂点データへのポインタを取得
-	//g_pVtxBuffBillboard->Lock(0, 0, (void**)&pVtx, 0);
-
-	//for (nCntBillboard = 0; nCntBillboard < MAX_BILLBOARD; nCntBillboard++)
-	//{
-	//	//弾の位置の更新
-	//	g_aBillboard[nCntBillboard].pos += g_aBillboard[nCntBillboard].move;
-
-	//	//頂点座標の更新
-	//	pVtx[0].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x - 25.0f, g_aBillboard[nCntBillboard].pos.y - 25.0f, 0.0f);
-	//	pVtx[1].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x + 25.0f, g_aBillboard[nCntBillboard].pos.y - 25.0f, 0.0f);
-	//	pVtx[2].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x - 25.0f, g_aBillboard[nCntBillboard].pos.y + 25.0f, 0.0f);
-	//	pVtx[3].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x + 25.0f, g_aBillboard[nCntBillboard].pos.y + 25.0f, 0.0f);
-
-	//	if (g_aBillboard[nCntBillboard].pos.x > SCREEN_WIDTH + 25)
-	//	{
-	//		g_aBillboard[nCntBillboard].bUse = false;//使用してない状態にする
-	//	}
-
-	//	//寿命のカウントダウン
-	//	g_aBillboard[nCntBillboard].nLife--;
-
-	//	pVtx += 4;//頂点データのポインタを4つ分進める
-	//}
-
-	////頂点バッファをアンロックする
-	//g_pVtxBuffBillboard->Unlock();
 }
 
 //==============================================================
@@ -218,17 +185,8 @@ void SetBillboard(D3DXVECTOR3 pos/*, D3DXVECTOR3 move, D3DXVECTOR3 dir, int nLif
 		if (g_aBillboard[nCntBillboard].bUse == false)
 		{//弾が使用されていない
 			g_aBillboard[nCntBillboard].pos = pos;
-			//g_aBillboard[nCntBillboard].move = move;
-			//g_aBillboard[nCntBillboard].dir = dir;
-			//g_aBillboard[nCntBillboard].nLife = 300;
 
 			g_aBillboard[nCntBillboard].bUse = true;//使用している状態にする
-
-			//頂点座標の設定
-			//pVtx[0].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x - 25.0f, g_aBillboard[nCntBillboard].pos.y - 25.0f, 0.0f);
-			//pVtx[1].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x + 25.0f, g_aBillboard[nCntBillboard].pos.y - 25.0f, 0.0f);
-			//pVtx[2].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x - 25.0f, g_aBillboard[nCntBillboard].pos.y + 25.0f, 0.0f);
-			//pVtx[3].pos = D3DXVECTOR3(g_aBillboard[nCntBillboard].pos.x + 25.0f, g_aBillboard[nCntBillboard].pos.y + 25.0f, 0.0f);
 
 			break;
 		}

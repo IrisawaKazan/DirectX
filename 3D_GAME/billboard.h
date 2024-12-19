@@ -16,7 +16,7 @@ typedef struct
 {
 	D3DXVECTOR3 pos;    //ˆÊ’u
 	D3DXVECTOR3 rot;    //Œü‚«
-	//D3DXVECTOR3 move;   //ˆÚ“®—Ê
+	D3DXVECTOR3 move;   //ˆÚ“®—Ê
 	//D3DXVECTOR3 dir;    //•ûŒü
 	//int nLife;          //Žõ–½
 	//int nType;          //Ží—Þ

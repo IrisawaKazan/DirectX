@@ -11,7 +11,7 @@
 #include"player.h"
 
 //É}ÉNÉçíËã`
-#define MAX_GOAL (1)
+#define MAX_GOAL (2)
 #define GOAL_WIDTH (150.0f)
 #define GOAL_HEIGHT (25.0f)
 

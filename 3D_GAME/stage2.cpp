@@ -24,7 +24,13 @@ void InitStage2(void)
 	InitMeshwall();
 	InitGoal();
 	InitSphere();
+	InitBillboard();
 	//InitSound(HWND(-1));
+
+	//ビルボード(雲)
+	SetBillboard(D3DXVECTOR3(-200.0f, 80.0f, 200.0f));
+	SetBillboard(D3DXVECTOR3(200.0f, 80.0f, 50.0f));
+	SetBillboard(D3DXVECTOR3(-40.0f, -100.0f, -200.0f));
 
 	//ゴール
 	SetGoal(D3DXVECTOR3(0.0f, GOAL_HEIGHT, 150.0f), D3DXVECTOR3(-D3DX_PI / 2.0f, 0.0f, 0.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
@@ -231,6 +237,7 @@ void UninitStage2(void)
 	UninitMeshwall();
 	UninitGoal();
 	UninitSphere();
+	UninitBillboard();
 	//UninitSound();
 }
 
@@ -254,6 +261,7 @@ void UpdateStage2(void)
 	UpdateMeshwall();
 	UpdateGoal();
 	UpdateSphere();
+	UpdateBillboard();
 
 	if (pPlayer->pos.z <= -150.0f && GetFade() == FADE_NONE)
 	{//ゲームオーバー
@@ -297,5 +305,6 @@ void DrawStage2(void)
 	DrawWall();
 	DrawMeshwall();
 	DrawSphere();
+	DrawBillboard();
 	DrawShadow();
 }
