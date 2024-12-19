@@ -95,13 +95,13 @@ void UpdateTitlethird(void)
 		//モード設定(チュートリアル画面に移行)
 		SetFade(MODE_TUTORIAL);
 	}
-	else if (GetKeyboardTrigger(DIK_2) == true && GetFade() == FADE_NONE)
+	else if (GetKeyboardTrigger(DIK_2) || GetKeyboardTrigger(DIK_NUMPAD2) == true && GetFade() == FADE_NONE)
 	{//2が押された
 		//モード設定(ゲーム画面に移行)
 		SetStage(STAGE_2);
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_3) == true && GetFade() == FADE_NONE)
+	else if (GetKeyboardTrigger(DIK_3) || GetKeyboardTrigger(DIK_NUMPAD3) == true && GetFade() == FADE_NONE)
 	{//3が押された
 		//モード設定(ゲーム画面に移行)
 		SetStage(STAGE_3);

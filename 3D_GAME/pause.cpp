@@ -93,43 +93,35 @@ void UninitPause(void)
 //==============================================================
 void UpdatePause(void)
 {
-	if (GetKeyboardTrigger(DIK_1) == true)
+	if (GetKeyboardTrigger(DIK_1) || GetKeyboardTrigger(DIK_NUMPAD1) == true)
 	{//そのステージの最初からやり直す
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_2) == true)
+	else if (GetKeyboardTrigger(DIK_2) || GetKeyboardTrigger(DIK_NUMPAD2) == true)
 	{//タイトルに戻る
 		SetStage(STAGE_1);
 		SetFade(MODE_TITLE);
 	}
 	//裏コマンド
-	else if (GetKeyboardTrigger(DIK_5) == true)
-	{//チュートリアル画面に行く
-		SetFade(MODE_TUTORIAL);
-	}
-	else if (GetKeyboardTrigger(DIK_6) == true)
-	{//ゲームオーバー画面に行く
-		SetFade(MODE_GAMEOVER);
-	}
-	else if (GetKeyboardTrigger(DIK_7) == true)
+	else if (GetKeyboardTrigger(DIK_8) == true)
 	{//リザルト画面に行く
 		SetFade(MODE_RESULT);
 	}
-	else if (GetKeyboardTrigger(DIK_8) == true)
+	else if (GetKeyboardTrigger(DIK_9) == true)
 	{//クリア画面に行く
 		SetFade(MODE_CLEAR);
 	}
-	else if (GetKeyboardTrigger(DIK_9) == true)
+	else if (GetKeyboardTrigger(DIK_0) == true)
 	{//ステージ1に行く
 		SetStage(STAGE_1);
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_0) == true)
+	else if (GetKeyboardTrigger(DIK_BACKSPACE) == true)
 	{//ステージ2に行く
 		SetStage(STAGE_2);
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_BACKSPACE) == true)
+	else if (GetKeyboardTrigger(DIK_NUMLOCK) == true)
 	{//ステージ3に行く
 		SetStage(STAGE_3);
 		SetFade(MODE_GAME);
