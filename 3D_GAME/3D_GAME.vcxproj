@@ -173,6 +173,8 @@
     <ClCompile Include="sphere.cpp" />
     <ClCompile Include="stage1.cpp" />
     <ClCompile Include="stage2.cpp" />
+    <ClCompile Include="stage3.cpp" />
+    <ClCompile Include="stage4.cpp" />
     <ClCompile Include="title.cpp" />
     <ClCompile Include="titlefirst.cpp" />
     <ClCompile Include="titlesecond.cpp" />
@@ -211,6 +213,8 @@
     <ClInclude Include="sphere.h" />
     <ClInclude Include="stage1.h" />
     <ClInclude Include="stage2.h" />
+    <ClInclude Include="stage3.h" />
+    <ClInclude Include="stage4.h" />
     <ClInclude Include="title.h" />
     <ClInclude Include="titlefirst.h" />
     <ClInclude Include="titlesecond.h" />

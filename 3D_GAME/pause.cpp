@@ -129,6 +129,16 @@ void UpdatePause(void)
 		SetStage(STAGE_2);
 		SetFade(MODE_GAME);
 	}
+	else if (GetKeyboardTrigger(DIK_BACKSPACE) == true)
+	{//ステージ3に行く
+		SetStage(STAGE_3);
+		SetFade(MODE_GAME);
+	}
+	else if (GetKeyboardTrigger(DIK_DELETE) == true)
+	{//ステージ4に行く
+		SetStage(STAGE_4);
+		SetFade(MODE_GAME);
+	}
 }
 
 //==============================================================

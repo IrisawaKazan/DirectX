@@ -22,7 +22,7 @@ void InitTitlethird(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\titlethird101.png",//豪華に
+		"data\\TEXTURE\\titlethird101.png",//豪華に 3が押されたらExStage
 		&g_pTextureTitlethird);
 
 	//頂点バッファの生成
@@ -99,6 +99,12 @@ void UpdateTitlethird(void)
 	{//2が押された
 		//モード設定(ゲーム画面に移行)
 		SetStage(STAGE_2);
+		SetFade(MODE_GAME);
+	}
+	else if (GetKeyboardTrigger(DIK_3) == true && GetFade() == FADE_NONE)
+	{//3が押された
+		//モード設定(ゲーム画面に移行)
+		SetStage(STAGE_3);
 		SetFade(MODE_GAME);
 	}
 }

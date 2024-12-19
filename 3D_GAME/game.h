@@ -26,6 +26,8 @@
 #include"goal.h"
 #include"stage1.h"
 #include"stage2.h"
+#include"stage3.h"
+#include"stage4.h"
 #include"sphere.h"
 #include"model.h"
 
@@ -39,6 +41,8 @@ typedef enum
 {
 	STAGE_1 = 0,
 	STAGE_2,
+	STAGE_3,
+	STAGE_4,
 	STAGE_MAX
 }STAGE;
 

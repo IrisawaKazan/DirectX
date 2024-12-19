@@ -24,6 +24,14 @@ void InitGame(void)
 	case STAGE_2:
 		InitStage2();
 		break;
+
+	case STAGE_3:
+		InitStage3();
+		break;
+
+	case STAGE_4:
+		InitStage4();
+		break;
 	}
 
 	InitPause();
@@ -71,6 +79,14 @@ void UpdateGame(void)
 		case STAGE_2:
 			UpdateStage2();
 			break;
+
+		case STAGE_3:
+			UpdateStage3();
+			break;
+
+		case STAGE_4:
+			UpdateStage4();
+			break;
 		}
 	}
 }
@@ -88,6 +104,14 @@ void DrawGame(void)
 
 	case STAGE_2:
 		DrawStage2();
+		break;
+
+	case STAGE_3:
+		DrawStage3();
+		break;
+
+	case STAGE_4:
+		DrawStage4();
 		break;
 	}
 
