@@ -43,6 +43,10 @@ void InitStage4(void)
 	{
 		//ìÆÇ©Ç»Ç¢
 		SetDeadBlock(D3DXVECTOR3(0.0f, 0.0f, 0.0f), 0);
+		SetDeadBlock(D3DXVECTOR3(130.0f, 0.0f, 130.0f), 0);
+		SetDeadBlock(D3DXVECTOR3(130.0f, 0.0f, -130.0f), 0);
+		SetDeadBlock(D3DXVECTOR3(-130.0f, 0.0f, 130.0f), 0);
+		SetDeadBlock(D3DXVECTOR3(-130.0f, 0.0f, -130.0f), 0);
 		//Å®
 		SetDeadBlock(D3DXVECTOR3(-120.0f, 0.0f, -120.0f), 1);
 		SetDeadBlock(D3DXVECTOR3(-80.0f, 0.0f, -80.0f), 1);

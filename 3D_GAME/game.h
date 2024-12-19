@@ -30,6 +30,7 @@
 #include"stage4.h"
 #include"sphere.h"
 #include"model.h"
+#include"result.h"
 
 //ƒ}ƒNƒ’è‹`
 #define MAX_GBLOCKPOS (120.0f)

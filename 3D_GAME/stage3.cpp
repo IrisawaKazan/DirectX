@@ -208,8 +208,9 @@ void UpdateStage3(void)
 	if (pPlayer->pos.z >= 142.0f && GetFade() == FADE_NONE)
 	{//クリア
 		SetStage(STAGE_4);
+		SetResult(RESULT_3);
 		//モード設定( 画面に移行)
-		SetFade(MODE_GAME);
+		SetFade(MODE_RESULT);
 	}
 }
 

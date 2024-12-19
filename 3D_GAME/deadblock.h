@@ -12,7 +12,7 @@
 #include"fade.h"
 
 //マクロ定義
-#define MAX_DEADBLOCK (128)
+#define MAX_DEADBLOCK (256)
 #define MAX_MDBLOCK (1.5f)
 
 //デッドブロックの構造体の定義

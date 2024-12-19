@@ -92,6 +92,7 @@ void UpdateTutorial(void)
 {
 	if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
 	{//決定キー(ENTERキー)が押された
+		SetStage(STAGE_1);
 		//モード設定(ゲーム画面に移行)
 		SetFade(MODE_GAME);
 	}

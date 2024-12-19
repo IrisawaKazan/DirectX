@@ -7,62 +7,27 @@
 #include"result.h"
 
 //グローバル変数宣言
-LPDIRECT3DTEXTURE9 g_pTextureResult = NULL;     //テクスチャへのポインタ
-LPDIRECT3DVERTEXBUFFER9 g_pVtxBuffResult = NULL;//頂点バッファのポインタ
+RESULT g_result = RESULT_1;//現在のモード
 
 //==============================================================
 //リザルト画面の初期化処理
 //==============================================================
 void InitResult(void)
 {
-	LPDIRECT3DDEVICE9 pDevice;//デバイスへのポインタ
+	switch (g_result)
+	{
+	case RESULT_1:
+		InitResultFirst();
+		break;
 
-	//デバイスの所得
-	pDevice = GetDevice();
+	case RESULT_2:
+		InitResultSecond();
+		break;
 
-	//テクスチャの初期化処理
-	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\result101.png",//ステージクリアの絵と,エンターで次のステージ,スペースでタイトルへみたいな画像に
-		&g_pTextureResult);
-
-	//頂点バッファの生成
-	pDevice->CreateVertexBuffer(sizeof(VERTEX_2D) * 4,
-		D3DUSAGE_WRITEONLY,
-		FVF_VERTEX_2D,
-		D3DPOOL_MANAGED,
-		&g_pVtxBuffResult,
-		NULL);
-
-	VERTEX_2D* pVtx;//頂点情報へのポインタ
-
-	//頂点バッファをロックし,頂点情報へのポインタを取得
-	g_pVtxBuffResult->Lock(0, 0, (void**)&pVtx, 0);
-
-	//頂点座標の設定
-	pVtx[0].pos = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	pVtx[1].pos = D3DXVECTOR3(1280.0f, 0.0f, 0.0f);
-	pVtx[2].pos = D3DXVECTOR3(0.0f, 720.0f, 0.0f);
-	pVtx[3].pos = D3DXVECTOR3(1280.0f, 720.0f, 0.0f);
-
-	//rhwの設定
-	pVtx[0].rhw = 1.0f;
-	pVtx[1].rhw = 1.0f;
-	pVtx[2].rhw = 1.0f;
-	pVtx[3].rhw = 1.0f;
-
-	//頂点カラーの設定
-	pVtx[0].col = D3DCOLOR_RGBA(255, 255, 255, 255);
-	pVtx[1].col = D3DCOLOR_RGBA(255, 255, 255, 255);
-	pVtx[2].col = D3DCOLOR_RGBA(255, 255, 255, 255);
-	pVtx[3].col = D3DCOLOR_RGBA(255, 255, 255, 255);
-
-	pVtx[0].tex = D3DXVECTOR2(0.0f, 0.0f);
-	pVtx[1].tex = D3DXVECTOR2(1.0f, 0.0f);
-	pVtx[2].tex = D3DXVECTOR2(0.0f, 1.0f);
-	pVtx[3].tex = D3DXVECTOR2(1.0f, 1.0f);
-
-	//頂点バッファをアンロックする
-	g_pVtxBuffResult->Unlock();
+	case RESULT_3:
+		InitResultThird();
+		break;
+	}
 }
 
 //==============================================================
@@ -70,18 +35,11 @@ void InitResult(void)
 //==============================================================
 void UninitResult(void)
 {
-	//テクスチャの破棄
-	if (g_pTextureResult != NULL)
+	switch (g_result)
 	{
-		g_pTextureResult->Release();
-		g_pTextureResult = NULL;
-	}
-
-	//頂点バッファの破棄
-	if (g_pVtxBuffResult != NULL)
-	{
-		g_pVtxBuffResult->Release();
-		g_pVtxBuffResult = NULL;
+	case RESULT_1:
+		UninitResultFirst();
+		break;
 	}
 }
 
@@ -90,18 +48,19 @@ void UninitResult(void)
 //==============================================================
 void UpdateResult(void)
 {
-	if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
+	switch (g_result)
 	{
-		SetTitle(TITLE_2);
-		//モード設定(タイトル画面に移行)
-		SetFade(MODE_TITLE);
-	}
-	else if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
-	{
-		SetStage(STAGE_2);
-		SetTitle(TITLE_2);
-		//次のステージに移行
-		SetFade(MODE_GAME);
+	case RESULT_1:
+		UpdateResultFirst();
+		break;
+
+	case RESULT_2:
+		UpdateResultSecond();
+		break;
+
+	case RESULT_3:
+		UpdateResultThird();
+		break;
 	}
 }
 
@@ -110,20 +69,34 @@ void UpdateResult(void)
 //==============================================================
 void DrawResult(void)
 {
-	LPDIRECT3DDEVICE9 pDevice;//デバイスへのポインタ
+	switch (g_result)
+	{
+	case RESULT_1:
+		DrawResultFirst();
+		break;
 
-	//デバイスの所得
-	pDevice = GetDevice();
+	case RESULT_2:
+		DrawResultSecond();
+		break;
 
-	//頂点バッファをデータストリームに設定
-	pDevice->SetStreamSource(0, g_pVtxBuffResult, 0, sizeof(VERTEX_2D));
+	case RESULT_3:
+		DrawResultThird();
+		break;
+	}
+}
 
-	//頂点フォーマットの設定
-	pDevice->SetFVF(FVF_VERTEX_2D);
+//==============================================================
+//リザルト画面の設定
+//==============================================================
+void SetResult(RESULT result)
+{
+	g_result = result;
+}
 
-	//テクスチャの設定
-	pDevice->SetTexture(0, g_pTextureResult);
-
-	//プレイヤーの描画
-	pDevice->DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+//==============================================================
+//リザルト画面の取得
+//==============================================================
+RESULT GetResult(void)
+{
+	return g_result;
 }

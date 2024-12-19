@@ -12,6 +12,7 @@
 #include"fade.h"
 #include"game.h"
 #include"title.h"
+#include"result.h"
 
 //プロトタイプ宣言
 void InitClear(void);
