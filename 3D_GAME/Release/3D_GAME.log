@@ -1,42 +1,10 @@
-﻿  billboard.cpp
-  block.cpp
-  bullet.cpp
-  camera.cpp
-  clear.cpp
-  column.cpp
-  deadblock.cpp
-  deadblockhighspeed.cpp
-  explosion.cpp
-  fade.cpp
+﻿  camera.cpp
   game.cpp
-  gameover.cpp
-  goal.cpp
-  goalblock.cpp
-  input.cpp
-  lastblock.cpp
-  light.cpp
-  main.cpp
-  meshfield.cpp
-  meshwall.cpp
-  コンパイル中...
-  model.cpp
   pause.cpp
-  player.cpp
-  polygon.cpp
-  result.cpp
-  shadow.cpp
-  sound.cpp
-  sphere.cpp
   stage1.cpp
   stage2.cpp
-  title.cpp
-  titlefirst.cpp
-  titlesecond.cpp
-  titlethird.cpp
-  tutorial.cpp
-  wall.cpp
   コード生成しています。
-  5 of 187 functions ( 2.7%) were compiled, the rest were copied from previous compilation.
+  1 of 187 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     6 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。

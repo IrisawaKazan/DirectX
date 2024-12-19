@@ -14,6 +14,7 @@
 #include"pause.h"
 #include"fade.h"
 #include"stage1.h"
+#include"sound.h"
 
 #define MAX_PPP (1800.0f)
 #define MAX_PPP1 (2600.0f)

@@ -27,8 +27,8 @@ DWORD g_aSizeAudio[SOUND_LABEL_MAX] = {};					// オーディオデータサイズ
 // サウンドの情報
 SOUNDINFO g_aSoundInfo[SOUND_LABEL_MAX] =
 {
-	{"data/BGM/Future_3.wav", -1},       //BGM1
-	{"data/BGM/tama.wav", 0},            //SE1
+	{"data/BGM/Drumnbass_02.wav", -1},       //BGM1
+	{"data/BGM/tama.wav", 0},                //SE1
 
 };
 

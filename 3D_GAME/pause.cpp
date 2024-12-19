@@ -93,8 +93,6 @@ void UninitPause(void)
 //==============================================================
 void UpdatePause(void)
 {
-	//UpdateCamera();
-
 	if (GetKeyboardTrigger(DIK_1) == true)
 	{//そのステージの最初からやり直す
 		SetFade(MODE_GAME);

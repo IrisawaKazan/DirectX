@@ -24,6 +24,7 @@ void InitStage1(void)
 	InitMeshwall();
 	InitGoal();
 	InitSphere();
+	//InitSound(HWND(-1));
 
 	//ゴール
 	SetGoal(D3DXVECTOR3(0.0f, GOAL_HEIGHT, 150.0f), D3DXVECTOR3(-D3DX_PI / 2.0f, 0.0f, 0.0f), D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f));
@@ -150,6 +151,7 @@ void UninitStage1(void)
 	UninitMeshwall();
 	UninitGoal();
 	UninitSphere();
+	//UninitSound();
 }
 
 //==============================================================
@@ -193,7 +195,7 @@ void UpdateStage1(void)
 	}
 	if (pPlayer->pos.z >= 142.0f && GetFade() == FADE_NONE)
 	{//クリア
-		//モード設定(  画面に移行)
+		//モード設定(リザルト画面に移行)
 		SetFade(MODE_RESULT);
 	}
 }

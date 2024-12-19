@@ -13,6 +13,7 @@
 #include"input.h"
 #include"pause.h"
 #include"fade.h"
+#include"sound.h"
 
 //プロトタイプ宣言
 void InitStage1(void);
