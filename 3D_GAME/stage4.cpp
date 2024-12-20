@@ -291,6 +291,7 @@ void UpdateStage4(void)
 	}
 	if (pPlayer->pos.z >= 142.0f && GetFade() == FADE_NONE)
 	{//クリア
+		SetClear(CLEAR_2);
 		//モード設定(クリア画面に移行)
 		SetFade(MODE_CLEAR);
 	}

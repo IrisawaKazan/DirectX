@@ -103,22 +103,22 @@ void UpdatePause(void)
 		SetFade(MODE_TITLE);
 	}
 	//裏コマンド
-	else if (GetKeyboardTrigger(DIK_0) == true)
+	else if (GetKeyboardTrigger(DIK_BACKSPACE) == true)
 	{//ステージ1に行く
 		SetStage(STAGE_1);
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_BACKSPACE) == true)
+	else if (GetKeyboardTrigger(DIK_DELETE) == true)
 	{//ステージ2に行く
 		SetStage(STAGE_2);
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_NUMLOCK) == true)
+	else if (GetKeyboardTrigger(DIK_NUMPADPLUS) == true)
 	{//ステージ3に行く
 		SetStage(STAGE_3);
 		SetFade(MODE_GAME);
 	}
-	else if (GetKeyboardTrigger(DIK_DELETE) == true)
+	else if (GetKeyboardTrigger(DIK_NUMPADMINUS) == true)
 	{//ステージ4に行く
 		SetStage(STAGE_4);
 		SetFade(MODE_GAME);

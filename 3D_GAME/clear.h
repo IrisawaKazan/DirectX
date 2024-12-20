@@ -13,11 +13,23 @@
 #include"game.h"
 #include"title.h"
 #include"result.h"
+#include"clearfirst.h"
+#include"clearsecond.h"
+
+//クリアの種類
+typedef enum
+{
+	CLEAR_1 = 0,
+	CLEAR_2,
+	CLEAR_MAX
+}CLEAR;
 
 //プロトタイプ宣言
 void InitClear(void);
 void UninitClear(void);
 void UpdateClear(void);
 void DrawClear(void);
+void SetClear(CLEAR clear);
+CLEAR GetClear(void);
 
 #endif

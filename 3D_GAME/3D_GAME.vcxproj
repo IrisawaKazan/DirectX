@@ -148,6 +148,8 @@
     <ClCompile Include="bullet.cpp" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="clear.cpp" />
+    <ClCompile Include="clearfirst.cpp" />
+    <ClCompile Include="clearsecond.cpp" />
     <ClCompile Include="column.cpp" />
     <ClCompile Include="deadblock.cpp" />
     <ClCompile Include="deadblockhighspeed.cpp" />
@@ -191,6 +193,8 @@
     <ClInclude Include="bullet.h" />
     <ClInclude Include="camera.h" />
     <ClInclude Include="clear.h" />
+    <ClInclude Include="clearfirst.h" />
+    <ClInclude Include="clearsecond.h" />
     <ClInclude Include="column.h" />
     <ClInclude Include="deadblock.h" />
     <ClInclude Include="deadblockhighspeed.h" />

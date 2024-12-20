@@ -17,6 +17,7 @@
 #include"stage2.h"
 #include"stage3.h"
 #include"sound.h"
+#include"clear.h"
 
 //プロトタイプ宣言
 void InitStage4(void);
