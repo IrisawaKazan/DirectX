@@ -209,7 +209,7 @@ void UpdateStage3(void)
 	{//クリア
 		SetStage(STAGE_4);
 		SetResult(RESULT_3);
-		//モード設定( 画面に移行)
+		//モード設定(リザルト画面に移行)
 		SetFade(MODE_RESULT);
 	}
 }
