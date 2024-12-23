@@ -13,6 +13,7 @@
 #include"gameover.h"
 #include"clear.h"
 #include"tutorial.h"
+//#include"cameracontroller.h"
 
 //グローバル変数宣言
 LPDIRECT3D9 g_pD3D = NULL;            //Direct3Dオブジェクトへのポインタ

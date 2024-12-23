@@ -8,6 +8,8 @@
 #define _CAMERA_H_
 
 #include"main.h"
+#include"input.h"
+#include"player.h"
 
 typedef struct
 {

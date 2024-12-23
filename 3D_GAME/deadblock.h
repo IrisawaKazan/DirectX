@@ -10,6 +10,7 @@
 #include"main.h"
 #include"player.h"
 #include"fade.h"
+#include"explosion.h"
 
 //É}ÉNÉçíËã`
 #define MAX_DEADBLOCK (256)

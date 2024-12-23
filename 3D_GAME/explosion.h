@@ -9,6 +9,7 @@
 
 #include"main.h"
 #include"bullet.h"
+#include"player.h"
 
 //ƒ}ƒNƒ’è‹`
 #define MAX_EXPLOSION (MAX_BULLET)//”š”­‚ÌÅ‘å”

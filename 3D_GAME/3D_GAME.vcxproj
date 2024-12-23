@@ -147,6 +147,7 @@
     <ClCompile Include="block.cpp" />
     <ClCompile Include="bullet.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="cameracontroller.cpp" />
     <ClCompile Include="clear.cpp" />
     <ClCompile Include="clearfirst.cpp" />
     <ClCompile Include="clearsecond.cpp" />
@@ -192,6 +193,7 @@
     <ClInclude Include="block.h" />
     <ClInclude Include="bullet.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="cameracontroller.h" />
     <ClInclude Include="clear.h" />
     <ClInclude Include="clearfirst.h" />
     <ClInclude Include="clearsecond.h" />

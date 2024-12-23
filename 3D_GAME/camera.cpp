@@ -5,8 +5,6 @@
 //
 //==============================================================
 #include"camera.h"
-#include"input.h"
-#include"player.h"
 
 //グローバル変数
 Camera g_camera;//カメラ情報
@@ -19,7 +17,6 @@ void InitCamera(void)
 	Player* pPlayer = GetPlayer();
 
 	//視点,注視点,上方向を設定する
-	//g_camera.posV = D3DXVECTOR3(0.0f, 100.0f, -350.0f);//どっちか
 	g_camera.posV = D3DXVECTOR3(0.0f, 200.0f, -250.0f);//どっちか
 	g_camera.posR = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	//g_camera.posR = pPlayer->pos;

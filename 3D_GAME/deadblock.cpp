@@ -268,6 +268,11 @@ void SetDeadBlock(D3DXVECTOR3 pos, int type)
 //==============================================================
 void CollisionDeadBlockX(void)
 {
+	//InitExplosion();
+	//UninitExplosion();
+	//UpdateExplosion();
+	//DrawExplosion();
+
 	Player* pPlayer = GetPlayer();
 
 	for (int nCntDeadBlock = 0; nCntDeadBlock < MAX_DEADBLOCK; nCntDeadBlock++)

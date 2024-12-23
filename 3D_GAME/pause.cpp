@@ -103,11 +103,6 @@ void UpdatePause(void)
 		SetFade(MODE_TITLE);
 	}
 	//裏コマンド
-	else if (GetKeyboardTrigger(DIK_BACKSPACE) == true)
-	{//ステージ1に行く
-		SetStage(STAGE_1);
-		SetFade(MODE_GAME);
-	}
 	else if (GetKeyboardTrigger(DIK_DELETE) == true)
 	{//ステージ2に行く
 		SetStage(STAGE_2);

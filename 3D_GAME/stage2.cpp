@@ -25,6 +25,7 @@ void InitStage2(void)
 	InitGoal();
 	InitSphere();
 	InitBillboard();
+	InitExplosion();
 	//InitSound(HWND(-1));
 
 	//ビルボード(雲)
@@ -238,6 +239,7 @@ void UninitStage2(void)
 	UninitGoal();
 	UninitSphere();
 	UninitBillboard();
+	UninitExplosion();
 	//UninitSound();
 }
 
@@ -262,21 +264,25 @@ void UpdateStage2(void)
 	UpdateGoal();
 	UpdateSphere();
 	UpdateBillboard();
+	UpdateExplosion();
 
 	if (pPlayer->pos.z <= -150.0f && GetFade() == FADE_NONE)
 	{//ゲームオーバー
+		SetExplosion(pPlayer->pos, D3DXVECTOR3(0.0f, 0.0f, 0.0f));
 		pPlayer->bDisp = false;
 		//モード設定(ゲームオーバー画面に移行)
 		SetFade(MODE_GAMEOVER);
 	}
 	if (pPlayer->pos.x <= -150.0f && GetFade() == FADE_NONE)
 	{//ゲームオーバー
+		SetExplosion(pPlayer->pos, D3DXVECTOR3(0.0f, 0.0f, 0.0f));
 		pPlayer->bDisp = false;
 		//モード設定(ゲームオーバー画面に移行)
 		SetFade(MODE_GAMEOVER);
 	}
 	if (pPlayer->pos.x >= 150.0f && GetFade() == FADE_NONE)
 	{//ゲームオーバー
+		SetExplosion(pPlayer->pos, D3DXVECTOR3(0.0f, 0.0f, 0.0f));
 		pPlayer->bDisp = false;
 		//モード設定(ゲームオーバー画面に移行)
 		SetFade(MODE_GAMEOVER);
@@ -307,5 +313,6 @@ void DrawStage2(void)
 	DrawMeshwall();
 	DrawSphere();
 	DrawBillboard();
+	DrawExplosion();
 	DrawShadow();
 }

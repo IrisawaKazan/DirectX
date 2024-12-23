@@ -36,6 +36,9 @@
 #define MAX_GBLOCKPOS (120.0f)
 #define MAX_LBLOCKPOSS1 (750.0f)
 #define MAX_LBLOCKPOSS2 (MAX_LBLOCKPOSS1 * 1.675f)
+#define MAX_PPP (1800.0f)
+#define MAX_PPP1 (2600.0f)
+#define MAX_PPP2 (2300.0f)
 
 //ステージの種類
 typedef enum
