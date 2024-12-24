@@ -320,7 +320,7 @@ void DrawStage4(void)
 	DrawWall();
 	DrawMeshwall();
 	DrawSphere();
-	DrawBillboard();
-	DrawExplosion();
 	DrawShadow();
+	DrawExplosion();
+	DrawBillboard();
 }

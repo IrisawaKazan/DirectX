@@ -90,13 +90,13 @@ void UninitResultThird(void)
 //==============================================================
 void UpdateResultThird(void)
 {
-	if (GetKeyboardTrigger(DIK_SPACE) == true && GetFade() == FADE_NONE)
+	if (GetKeyboardTrigger(DIK_SPACE) == true/* && GetFade() == FADE_NONE*/)
 	{
 		SetResult(RESULT_2);
 		//モード設定(タイトル画面に移行)
 		SetFade(MODE_TITLE);
 	}
-	else if (GetKeyboardTrigger(DIK_RETURN) == true && GetFade() == FADE_NONE)
+	else if (GetKeyboardTrigger(DIK_RETURN) == true/* && GetFade() == FADE_NONE*/)
 	{
 		SetResult(RESULT_2);
 		SetStage(STAGE_4);
