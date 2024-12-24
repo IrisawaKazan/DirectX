@@ -14,7 +14,7 @@
 LPDIRECTINPUT8 g_pInput = NULL;            //DirectInputオブジェクトへのポインタ
 LPDIRECTINPUTDEVICE8 g_pDevKeyboard = NULL;//入力デバイス(キーボード)へのポインタ
 BYTE g_aKeyState[NUM_KEY_MAX];             //キーボードのプレス情報
-BYTE g_aKeyStateTrigger[NUM_KEY_MAX];
+BYTE g_aKeyStateTrigger[NUM_KEY_MAX];      //キーボードのトリガー情報
 
 //==============================================================
 //キーボードの初期化処理

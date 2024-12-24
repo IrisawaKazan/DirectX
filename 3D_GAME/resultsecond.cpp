@@ -22,7 +22,7 @@ void InitResultSecond(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\result101.png",
+		"data\\TEXTURE\\result100.png",
 		&g_pTextureResultSecond);
 
 	//頂点バッファの生成

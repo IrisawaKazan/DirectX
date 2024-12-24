@@ -16,18 +16,18 @@ typedef enum
 	JOYKEY_DOWN,  //十字キー(下)
 	JOYKEY_LEFT,  //十字キー(左)
 	JOYKEY_RIGHT, //十字キー(右)
-	JOYKEY_START, //
-	JOYKEY_BACK,  //
-	JOYKEY_L3,    //
-	JOYKEY_R3,    //
-	JOYKEY_LB,    //
-	JOYKEY_RB,    //
-	JOYKEY_LT,    //
-	JOYKEY_RT,    //
-	JOYKEY_A,     //
-	JOYKEY_B,     //
-	JOYKEY_X,     //
-	JOYKEY_Y,     //
+	JOYKEY_START, //STARTボタン
+	JOYKEY_BACK,  //BACKボタン
+	JOYKEY_L3,    //Lスティック
+	JOYKEY_R3,    //Rスティック
+	JOYKEY_LB,    //LBボタン
+	JOYKEY_RB,    //RBボタン
+	JOYKEY_LT,    //LTボタン
+	JOYKEY_RT,    //RTボタン
+	JOYKEY_A,     //Aボタン
+	JOYKEY_B,     //Bボタン
+	JOYKEY_X,     //Xボタン
+	JOYKEY_Y,     //Yボタン
 	JOYKEY_MAX
 }JOYKEY;
 

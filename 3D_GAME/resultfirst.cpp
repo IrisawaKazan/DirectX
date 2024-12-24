@@ -22,7 +22,7 @@ void InitResultFirst(void)
 
 	//テクスチャの初期化処理
 	D3DXCreateTextureFromFile(pDevice,
-		"data\\TEXTURE\\result101.png",//ステージクリアの絵と,エンターで次のステージ,スペースでタイトルへみたいな画像に
+		"data\\TEXTURE\\result100.png",//ステージクリアの絵と,エンターで次のステージ,スペースでタイトルへみたいな画像に
 		&g_pTextureResultFirst);
 
 	//頂点バッファの生成
